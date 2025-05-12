@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Find Vehicle</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Find Vehicle</h1>
+        <p>
+            Enter vehicle details below:
+        </p>
+        <form action="FindVehicleServlet.do" method="POST">
+            <label for="vehicleRegistration">Enter Vehicle Registration Number:</label>
+            <input type="text" id="vehicleRegistration" name="vehicleRegistration" required>
+
+            <input type="submit" value="Find Vehicle">
+        </form>
+
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Upload Vehicle Offence</title>
+    </head>
+    <body>
+
+        <h1>Vehicle Offence Upload</h1>
+        <p>
+            Please enter the details and offence of the vehicle below:
+        </p>
+
+    <form action="UploadVehicleServlet.do" method="POST">
+        <ol>
+            <li>
+                <label for="vehicleName">Vehicle Name:</label>
+                <input type="text" id="vehicleName" name="vehicleName" required>
+            </li>
+            <li>
+                <label for="vehicleRegistration">Registration Number:</label>
+                <input type="text" id="vehicleRegistration" name="vehicleRegistration" required>
+            </li>
+            <li>
+                <label for="offenceType">Offence Type:</label>
+                <select id="offenceType" name="offenceType" required="">
+                    <option value="Speeding">Speeding</option>
+                    <option value="Expired Disk">Expired Disk</option>
+                    <option value="Driving Under the Influence">Driving Under the Influence</option>
+                </select>
+            </li>
+            <li>
+                <label for="offenceDate">Offence Date:</label>
+                <input type="date" id="offenceDate" name="offenceDate" required="">
+            </li>
+            <li>
+                <input type="submit" value="Submit Vehicle">
+            </li>
+        </ol>
+    </form>
+
+    </body>
+</html>

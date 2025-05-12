@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+    <title>Login</title>
+</head>
+    <body>
+        <h1>Login</h1>
+            <form method="POST" action="j_security_check">
+                <ul>
+                    <li>
+                        <label for="j_username">Username:</label>
+                        <input type="text" name="j_username" id="j_username" required>
+                    </li>
+                    <li>
+                        <label for="j_password">Password:</label>
+                        <input type="password" name="j_password" id="j_password" required>
+                    </li>
+                    <li>
+                        <input type="submit" value="Login">
+                    </li>
+                </ul>
+            </form>
+    </body>
+</html>
